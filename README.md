@@ -15,7 +15,7 @@ Add the following lines to your Cargo.toml file to include these dependencies:
 
     [dependencies]
     crypto = "0.2.36"
-    console = "0.14.1"
+    console = "0.15.5"
 
 # Usage
 ## Method 1: Drag and Drop
