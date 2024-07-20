@@ -15,9 +15,9 @@ Add the following lines to your Cargo.toml file to include these dependencies:
 
 ```toml
 [dependencies]
-crypto = "0.2.36"
+rust-crypto = "0.2.36"
 console = "0.15.5"
-rayon = "1.5.1"
+rayon = "1.10.0"
 ```
 
 # Usage
