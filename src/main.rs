@@ -2,7 +2,7 @@ use std::{env, fs};
 use crypto::digest::Digest;
 use crypto::sha2::{Sha256, Sha512};
 use crypto::md5::Md5;
-use console::Term;
+use console::{Term};
 use std::io;
 use rayon::prelude::*;
 
@@ -35,6 +35,9 @@ fn main() -> io::Result<()> {
     for hash in hashes {
         println!("{}", hash);
     }
+
+    println!("Press any key to exit...");
+    term.read_key()?;
 
     Ok(())
 }
