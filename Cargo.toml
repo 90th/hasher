@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 rust-crypto = "0.2.36"
 console = "0.15.5"
+rayon = "1.10.0"
