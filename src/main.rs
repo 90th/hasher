@@ -28,7 +28,7 @@ fn main() -> io::Result<()> {
         ("SHA256", Box::new(Sha256::new()) as Box<dyn Digest + Send>),
         ("MD5", Box::new(Md5::new()) as Box<dyn Digest + Send>),
         ("SHA512", Box::new(Sha512::new()) as Box<dyn Digest + Send>),
-    ].into_par_iter() // Use into_par_iter instead of par_iter
+    ].into_par_iter() 
         .map(|(hash_type, hasher)| calculate_hash(&file_content, hasher, hash_type.to_string()))
         .collect();
 
